@@ -1,0 +1,185 @@
+<html lang="en"><head><script>
+
+    document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%0A%3Chead%3E%0A%20%20%20%20%3Cmeta%20charset%3D%22UTF-8%22%20/%3E%0A%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%20/%3E%0A%0A%20%20%20%20%3Ctitle%3EDocument%3C/title%3E%0A%0A%20%20%20%20%3Clink%20href%3D%22https%3A//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css%22%20rel%3D%22stylesheet%22%0A%20%20%20%20%20%20%20%20integrity%3D%22sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC%22%20crossorigin%3D%22anonymous%22%20/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E%0A%0A%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20body%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background%3A%20%231f1f1f%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20body%2C%0A%20%20%20%20%20%20%20%20input%2C%0A%20%20%20%20%20%20%20%20select%2C%0A%20%20%20%20%20%20%20%20button%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20text-transform%3A%20uppercase%20%21important%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2025px%20%21important%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20700%20%21important%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20letter-spacing%3A%20-1px%20%21important%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20input%2C%0A%20%20%20%20%20%20%20%20select%2C%0A%20%20%20%20%20%20%20%20button%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background%3A%20%23dbdbdb%20%21important%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23323232%20%21important%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20input%2C%0A%20%20%20%20%20%20%20%20select%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20padding%3A%200.375rem%200.75rem%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%201rem%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20400%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20line-height%3A%201.5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23212529%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-color%3A%20%23fff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-clip%3A%20padding-box%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20border%3A%201px%20solid%20%23ced4da%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20/*%20-webkit-appearance%3A%20none%3B%20*/%0A%20%20%20%20%20%20%20%20%20%20%20%20/*%20-moz-appearance%3A%20none%3B%20*/%0A%20%20%20%20%20%20%20%20%20%20%20%20appearance%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20border-radius%3A%200.25rem%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transition%3A%20border-color%20.15s%20ease-in-out%2C%20box-shadow%20.15s%20ease-in-out%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20span%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%237e7e7e%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.select_box%3Ediv%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20position%3A%20absolute%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20width%3A%2042px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20height%3A%2090%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20background%3A%20%239A9A9B%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20top%3A%205%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20right%3A%203px%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.form-select%3Afocus%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20border-color%3A%20transparent%20%21important%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20outline%3A%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20box-shadow%3A%20none%20%21important%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20div%23imageContainer%20img%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%3C/style%3E%0A%3C/head%3E%0A%0A%3Cbody%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%20vh-100%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22row%20vh-100%20justify-content-center%20align-items-center%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-8%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22d-flex%20flex-wrap%20justify-content-center%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w-50%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22p-3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22userInput%22%20class%3D%22mx-2%20w-100%20rounded-0%22%20placeholder%3D%227002%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w-50%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22p-3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cselect%20id%3D%22weaponSelect%22%20class%3D%22mx-2%20w-100%20rounded-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Coption%20value%3D%22%22%3ESelect%20a%20Weapon%3C/option%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/select%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22my_btn%20w-100%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22p-3%20text-center%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20onclick%3D%22showRandomImage%28%29%22%20class%3D%22rounded-0%20px-5%20py-1%22%3Emerge%3C/button%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22w-100%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22imageContainer%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%0A%20%20%20%20%3C/div%3E%0A%3C/body%3E%0A%0A%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js%22%0A%20%20%20%20integrity%3D%22sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM%22%0A%20%20%20%20crossorigin%3D%22anonymous%22%3E%3C/script%3E%0A%0A%3Cscript%3E%0A%0Adocument.getElementById%28%27userInput%27%29.addEventListener%28%27input%27%2C%20function%28%29%20%7B%0A%20%20%20%20var%20userInput%20%3D%20this.value%3B%0A%20%20%20%20var%20weaponSelect%20%3D%20document.getElementById%28%27weaponSelect%27%29%3B%0A%0A%20%20%20%20//%20Change%20all%20options%20based%20on%20the%20user%20input%0A%20%20%20%20if%20%28userInput%20%3D%3D%3D%20%27%27%29%20%7B%0A%20%20%20%20%20%20%20%20setDropdownOptions%28%5B%27Select%20a%20Weapon%27%5D%29%3B%0A%20%20%20%20%7D%20else%20if%20%28userInput%20%3D%3D%3D%20%277002%27%29%20%7B%0A%20%20%20%20%20%20%20%20setDropdownOptions%28%5B%27Select%20a%20Weapon%27%2C%20%27ak47-weapon1%27%2C%20%27ak47-weapon2%27%2C%20%27ak47-weapon3%27%2C%20%27ak47-weapon4%27%5D%29%3B%0A%20%20%20%20%7D%20else%20if%20%28userInput%20%3D%3D%3D%20%277003%27%29%20%7B%0A%20%20%20%20%20%20%20%20setDropdownOptions%28%5B%27Select%20a%20Weapon%27%2C%20%27ak47-weapon1%27%2C%20%27ak47-weapon2%27%2C%20%27ak47-weapon3%27%2C%20%27ak47-weapon4%27%5D%29%3B%0A%20%20%20%20%7D%20else%20if%20%28userInput%20%3D%3D%3D%20%277004%27%29%20%7B%0A%20%20%20%20%20%20%20%20setDropdownOptions%28%5B%27Select%20a%20Weapon%27%2C%20%27ak47-weapon1%27%2C%20%27ak47-weapon2%27%2C%20%27ak47-weapon3%27%2C%20%27ak47-weapon4%27%5D%29%3B%0A%20%20%20%20%7D%20else%20if%20%28userInput%20%3D%3D%3D%20%277005%27%29%20%7B%0A%20%20%20%20%20%20%20%20setDropdownOptions%28%5B%27Select%20a%20Weapon%27%2C%20%27ak47-weapon1%27%2C%20%27ak47-weapon2%27%2C%20%27ak47-weapon3%27%2C%20%27ak47-weapon4%27%5D%29%3B%0A%20%20%20%20%7D%20else%7B%0A%20%20%20%20%20%20%20%20//%20Set%20to%20default%20or%20any%20other%20values%20as%20needed%0A%20%20%20%20%20%20%20%20setDropdownOptions%28%5B%27Select%20a%20Weapon%27%5D%29%3B%0A%20%20%20%20%7D%0A%7D%29%3B%0A%0Afunction%20setDropdownOptions%28optionsArray%29%20%7B%0A%20%20%20%20var%20weaponSelect%20%3D%20document.getElementById%28%27weaponSelect%27%29%3B%0A%20%20%20%20weaponSelect.innerHTML%20%3D%20%27%27%3B%20//%20Clear%20existing%20options%0A%0A%20%20%20%20//%20Add%20new%20options%20based%20on%20the%20provided%20array%0A%20%20%20%20optionsArray.forEach%28function%28optionValue%29%20%7B%0A%20%20%20%20%20%20%20%20var%20option%20%3D%20document.createElement%28%27option%27%29%3B%0A%20%20%20%20%20%20%20%20option.value%20%3D%20optionValue%3B%0A%20%20%20%20%20%20%20%20option.text%20%3D%20optionValue%3B%0A%20%20%20%20%20%20%20%20weaponSelect.add%28option%29%3B%0A%20%20%20%20%7D%29%3B%0A%7D%0A%0Afunction%20showRandomImage%28%29%20%7B%0A%20%20%20%20var%20userInput%20%3D%20document.getElementById%28%27userInput%27%29.value%3B%0A%20%20%20%20var%20weaponSelect%20%3D%20document.getElementById%28%27weaponSelect%27%29%3B%0A%20%20%20%20var%20selectedWeapon%20%3D%20weaponSelect.options%5BweaponSelect.selectedIndex%5D.value%3B%0A%0A%20%20%20%20if%20%28userInput%20%3D%3D%3D%20%277002%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon1%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_1%281%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%0A%20%20%20%20%7D%20else%20if%20%28userInput%20%3D%3D%3D%20%277002%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon2%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_1%282%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%20else%20if%20%28userInput%20%3D%3D%3D%20%277002%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon3%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_1%283%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277002%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon4%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_1%284%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277003%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon1%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_2%281%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277003%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon2%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_2%282%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277003%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon3%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_2%283%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277003%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon4%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_2%284%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277004%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon1%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_3%281%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277004%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon2%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_3%282%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277004%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon3%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_3%283%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277004%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon4%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_3%284%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277005%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon1%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_4%281%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277005%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon2%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_4%282%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277005%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon3%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_4%283%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20else%20if%20%28userInput%20%3D%3D%3D%20%277005%27%20%26%26%20selectedWeapon%20%3D%3D%3D%20%27ak47-weapon4%27%29%20%7B%0A%20%20%20%20%20%20%20%20var%20images%20%3D%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%27images/man_4%284%29.png%27%0A%20%20%20%20%20%20%20%20%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20randomIndex%20%3D%20Math.floor%28Math.random%28%29%20*%20images.length%29%3B%0A%20%20%20%20%20%20%20%20var%20imageUrl%20%3D%20images%5BrandomIndex%5D%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageElement%20%3D%20document.createElement%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20imageElement.src%20%3D%20imageUrl%3B%0A%0A%20%20%20%20%20%20%20%20var%20imageContainer%20%3D%20document.getElementById%28%27imageContainer%27%29%3B%0A%20%20%20%20%20%20%20%20imageContainer.innerHTML%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20imageContainer.appendChild%28imageElement%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20//%20Add%20similar%20conditions%20for%20other%20options%20as%20needed%0A%20%20%20%20else%20%7B%0A%20%20%20%20%20%20%20%20alert%28%27Please%20enter%20valid%20number%20and%20select%20a%20option%20to%20show%20the%20image%27%29%3B%0A%20%20%20%20%7D%0A%7D%0A%0A%0A%3C/script%3E%0A%0A%3C/html%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A'))
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+    <style>
+        body {
+            background: #1f1f1f;
+        }
+
+        body,
+        input,
+        select,
+        button {
+            text-transform: uppercase !important;
+            font-size: 25px !important;
+            font-weight: 700 !important;
+            letter-spacing: -1px !important;
+        }
+
+        input,
+        select,
+        button {
+            background: #dbdbdb !important;
+            color: #323232 !important;
+        }
+
+        input,
+        select {
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            /* -webkit-appearance: none; */
+            /* -moz-appearance: none; */
+            appearance: none;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        span {
+            color: #7e7e7e;
+        }
+
+        .select_box>div {
+            position: absolute;
+            width: 42px;
+            height: 90%;
+            background: #9A9A9B;
+            text-align: center;
+            top: 5%;
+            right: 3px;
+        }
+
+        .form-select:focus {
+            border-color: transparent !important;
+            outline: 0;
+            box-shadow: none !important;
+        }
+
+        div#imageContainer img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container vh-100">
+        <div class="row vh-100 justify-content-center align-items-center">
+            <div class="col-8">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="w-50">
+                        <div class="p-3">
+                            <input type="text" id="userInput" class="mx-2 w-100 rounded-0" placeholder="7002">
+                        </div>
+                    </div>
+                    <div class="w-50">
+                        <div class="p-3">
+                            <select id="weaponSelect" class="mx-2 w-100 rounded-0">
+                                <option value="">Select a Weapon</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="my_btn w-100">
+                        <div class="p-3 text-center">
+                            <button onclick="showRandomImage()" class="rounded-0 px-5 py-1">merge</button>
+                        </div>
+                    </div>
+                    <div class="w-100">
+                        <div id="imageContainer" style="display: block;">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+document.getElementById('userInput').addEventListener('input', function() {
+    var userInput = this.value;
+    var weaponSelect = document.getElementById('weaponSelect');
+
+    // Change all options based on the user input
+    if (userInput === '') {
+        setDropdownOptions(['Select a Weapon']);
+    } else if (userInput === '7002') {
+        setDropdownOptions(['Select a Weapon', 'ak47-weapon1', 'ak47-weapon2', 'ak47-weapon3', 'ak47-weapon4']);
+    } else if (userInput === '7003') {
+        setDropdownOptions(['Select a Weapon', 'ak47-weapon1', 'ak47-weapon2', 'ak47-weapon3', 'ak47-weapon4']);
+    } else if (userInput === '7004') {
+        setDropdownOptions(['Select a Weapon', 'ak47-weapon1', 'ak47-weapon2', 'ak47-weapon3', 'ak47-weapon4']);
+    } else if (userInput === '7560') {
+        setDropdownOptions(['Select a Weapon', 'ak47-weapon1', 'ak47-weapon2', 'ak47-weapon3', 'ak47-weapon4']);
+    } else{
+        // Set to default or any other values as needed
+        setDropdownOptions(['Select a Weapon']);
+    }
+});
+
+function setDropdownOptions(optionsArray) {
+    var weaponSelect = document.getElementById('weaponSelect');
+    weaponSelect.innerHTML = ''; // Clear existing options
+
+    // Add new options based on the provided array
+    optionsArray.forEach(function(optionValue) {
+        var option = document.createElement('option');
+        option.value = optionValue;
+        option.text = optionValue;
+        weaponSelect.add(option);
+    });
+}
+async function logMovies() {
+  const response = await fetch("./data.json");
+  const movies = await response.json();
+  console.log(movies);
+}
+function showRandomImage() {
+    var userInput = document.getElementById('userInput').value;
+    var weaponSelect = document.getElementById('weaponSelect');
+    var selectedWeapon = weaponSelect.options[weaponSelect.selectedIndex].value;
+    
+    var userElement = document.createElement('img');
+    userElement.src = "images/" + userInput + ".png";
+    userElement.style = 'position:absolute';
+
+    var weaponElement = document.createElement('img');
+    weaponElement.src = "weapons/" + selectedWeapon + ".png";
+    weaponElement.style = 'position:absolute';
+    logMovies();
+    var handElement = document.createElement('img');
+    handElement.src = "hand/" + "asian" + ".png";
+    handElement.style = 'position:absolute';
+
+    var imageContainer = document.getElementById('imageContainer');
+    imageContainer.innerHTML = '';
+    imageContainer.appendChild(userElement);
+    imageContainer.appendChild(weaponElement);
+    imageContainer.appendChild(handElement);
+}
+
+
+</script>
+</body></html>
